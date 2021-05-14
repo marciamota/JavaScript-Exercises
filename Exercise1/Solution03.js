@@ -8,7 +8,7 @@
 // Output: [1,3,6,10]
 // Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
 
-math = require("mathjs")
+Math = require("mathjs")
 
 const nums = [1, 2, 3, 4];
 let resultado = [];
@@ -18,7 +18,7 @@ var tempArray;
 var tempSum;
 for(let i = 0; i < numsLength; i++){
     tempArray = nums.slice(0, i+1);
-    tempSum = math.sum(tempArray);
+    tempSum = Math.sum(tempArray);
     resultado.push(tempSum);
     // resultado.push(math.sum(nums.slice(0, i+1)));
 };
