@@ -50,7 +50,7 @@ Output: 1
 
 # Exercise 2.6
 # Exercise description
-Find how many times a given word is inside a given string without using includes, split or indexOf
+Find how many times a given word is inside a given string without using includes, split, slice or indexOf
 
 ## Example 1:
 Input: 

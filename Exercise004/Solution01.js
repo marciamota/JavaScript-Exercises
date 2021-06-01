@@ -13,13 +13,16 @@
 var sumToFind = 5;
 var numbers = [1,3,6,2];
 var sumFound = false;
-for(let i = 0; i < numbers.length -1; i++){
-    for(let j = i + 1; j < numbers.length; j++){
+for (let i = 0; i < numbers.length -1; i++) {
+    for (let j = i + 1; j < numbers.length; j++) {
+        
+        console.log(`other way, i=${i},j=${j}, ${numbers[i]}+${numbers[j]}`)
         console.log("i="+i+",j="+j+", "+numbers[i]+"+" + numbers[j]);
+        
         console.log(numbers[i]+numbers[j]);
         console.log(numbers[i]+numbers[j]==sumToFind);
         if (numbers[i]+numbers[j]==sumToFind){
-            console.log(numbers[i] + " + " + numbers[j] + " = " + sumToFind);
+            console.log("sum found: " + numbers[i] + " + " + numbers[j] + " = " + sumToFind);
             sumFound = true;
             break;
         };
@@ -30,5 +33,5 @@ for(let i = 0; i < numbers.length -1; i++){
 }
 
 if (!sumFound){
-    console.log("not found");
+    console.log("sum not found");
 };

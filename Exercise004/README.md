@@ -9,3 +9,15 @@ Input:
 Output: 
     3 + 2 = 5
     if there is no such combinatio output 'not found'
+
+# Exercise 2.2
+# Exercise description
+given an array of numbers, find if any combination of 2 numbers in the array are equal another given number using while
+
+## Example 1:
+Input: 
+    sumToFind = 5;
+    numbers = [1,3,6,2]
+Output: 
+    3 + 2 = 5
+    if there is no such combinatio output 'not found'
