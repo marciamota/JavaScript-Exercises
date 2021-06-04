@@ -8,7 +8,7 @@ Input:
     numbers = [1,3,6,2]
 Output: 
     3 + 2 = 5
-    if there is no such combinatio output 'not found'
+    if there is no such combination then output 'not found'
 
 # Exercise 2.2
 # Exercise description
@@ -20,4 +20,4 @@ Input:
     numbers = [1,3,6,2]
 Output: 
     3 + 2 = 5
-    if there is no such combinatio output 'not found'
+    if there is no such combination then output 'not found'
