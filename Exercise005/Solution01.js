@@ -43,9 +43,21 @@
 // console.log(isPalindrome(myWord));
 
 // Solution 5.1.3
-var myWord = 'asa';
-function isPalindrome(word) {
-    var joinArray = word.split("").reverse().join("");
-    return (word == joinArray);
+// var myWord = 'asa';
+// function isPalindrome(word) {
+//     var joinArray = word.split("").reverse().join("");
+//     return (word == joinArray);
+// }
+// console.log(isPalindrome(myWord));
+
+// Solution 5.1.4
+// witthout using inbuilt functions
+const myWord = 'casa';
+let reversedWord = '';
+for (let i = myWord.length - 1; i >= 0; i--) {
+    reversedWord += myWord[i];
 }
-console.log(isPalindrome(myWord));
+const resposta = (myWord == reversedWord);
+console.log("is " + myWord + " palindrom? " + resposta)
+
+
