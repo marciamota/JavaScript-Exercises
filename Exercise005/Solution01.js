@@ -52,12 +52,25 @@
 
 // Solution 5.1.4
 // witthout using inbuilt functions
-const myWord = 'casa';
-let reversedWord = '';
-for (let i = myWord.length - 1; i >= 0; i--) {
-    reversedWord += myWord[i];
-}
-const resposta = (myWord == reversedWord);
-console.log("is " + myWord + " palindrom? " + resposta)
+// const myWord = 'casa';
+// let reversedWord = '';
+// for (let i = myWord.length - 1; i >= 0; i--) {
+//     reversedWord += myWord[i];
+// }
+// const resposta = (myWord == reversedWord);
+// console.log("is " + myWord + " palindrom? " + resposta)
 
+// Solution 5.1.5
+// witthout using inbuilt functions
+const myWord = 'asa';
+var isPalindrome = true;
+for (let i = 0; i < myWord.length / 2; i++) {
+    console.log('forward count: ' + i + ', backward count: ' + (myWord.length - 1 - i))
+    console.log('letra esquerda ' + myWord[i] + ' letra direita ' + myWord[myWord.length - 1 - i])
+    if (myWord[i] != myWord[myWord.length - 1 - i]) {
+        isPalindrome = false;
+        break;
+    }
+}
+console.log("is " + myWord + " palindrom? " + isPalindrome);
 
