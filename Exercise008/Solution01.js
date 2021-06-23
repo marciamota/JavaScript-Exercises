@@ -147,18 +147,19 @@
 // console.log('i have ' + speciesQuantity + ' ' + animalWithMostIndividuals);
 
 // solution 8.2 part 2.3
-let animalsCount = {
-    dog: 2,
-    cat: 3,
-    fish: 3,
-    bird: 1
-}
-let animalWithMostIndividuals = ''; //  dog, cat
-let speciesQuantity = 0; // 2, 5, 10
-for (const [animal, animalQuantity] of Object.entries(animalsCount)) {
-    if (speciesQuantity < animalQuantity) {
-        animalWithMostIndividuals = animal;
-        speciesQuantity = animalQuantity;
-    }
-}
-console.log('i have ' + speciesQuantity + ' ' + animalWithMostIndividuals);
+// let animalsCount = {
+//     dog: 2,
+//     cat: 3,
+//     fish: 3,
+//     bird: 1
+// }
+// let animalWithMostIndividuals = ''; //  dog, cat
+// let speciesQuantity = 0; // 2, 5, 10
+// for (const [animal, animalQuantity] of Object.entries(animalsCount)) {
+//     if (speciesQuantity < animalQuantity) {
+//         animalWithMostIndividuals = animal;
+//         speciesQuantity = animalQuantity;
+//     }
+// }
+// console.log('i have ' + speciesQuantity + ' ' + animalWithMostIndividuals);
+
