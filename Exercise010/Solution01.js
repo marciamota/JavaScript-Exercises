@@ -49,19 +49,75 @@
 // const food = ['pizza', 'hot dog', 'spaghetti']
 
 // Soulution 10.1
-const food = ['pizza', 'hot dog', 'spaghetti', 'mixto'];
+// const food = ['pizza', 'hot dog', 'spaghetti', 'mixto'];
 
-function randomPick(myArray) {
-    const randomNumber = Math.random();
-    const randomNumberUpToX = myArray.length * randomNumber;
-    const randomInteger = Math.floor(randomNumberUpToX);
-    // randomInteger 0 1 2 3
-    return myArray[randomInteger];
-    // return Math.ceil(6 * Math.random());
+// function randomPick(myArray) {
+//     const randomNumber = Math.random();
+//     const randomNumberUpToX = myArray.length * randomNumber;
+//     const randomInteger = Math.floor(randomNumberUpToX);
+//     // randomInteger 0 1 2 3
+//     return myArray[randomInteger];
+//     // return Math.ceil(6 * Math.random());
+// }
+
+// var resultados = [];
+// for (let i = 0; i < 10; i++) {
+//     resultados.push(randomPick(food))
+// }
+// console.log(resultados);
+
+// #Exercise 10.4
+// shuffle a deck of cards
+
+// Example:
+// the function must randomly return an element from this array
+// const deck = ['heart_ace', 'heart_2', 'heart_3'........]
+
+// // Soulution 10.4
+// let deck = ['heart_ace', 'heart_2', 'heart_3', 'heart_4', 'heart_5'];
+
+// function shuffleDeck(deckOfCards) {
+//     let shuffledDeck = [];
+//     let randomNumber;
+//     let randomNumberUpToX;
+//     let randomInteger
+//     const originalLength = deckOfCards.length;
+//     for (let i = 0; i < originalLength; i++) {
+//         randomNumber = Math.random();
+//         randomNumberUpToX = deckOfCards.length * randomNumber;
+//         randomInteger = Math.floor(randomNumberUpToX);
+//         shuffledDeck.push(deckOfCards.splice(randomInteger, 1)[0]);
+//     }
+//     return shuffledDeck;
+// }
+
+// console.log(shuffleDeck(deck));
+// console.log(deck);
+
+// #Exercise 10.5
+// shuffle a deck of cards
+
+// Example:
+// the function must randomly return an element from this array
+// const deck = ['heart_ace', 'heart_2', 'heart_3'........]
+
+// Soulution 10.4
+let deck = ['heart_ace', 'heart_2', 'heart_3', 'heart_4', 'heart_5'];
+
+function shuffleDeck(deckOfCards) {
+    let shuffledDeck = [];
+    let randomNumber;
+    let randomNumberUpToX;
+    let randomInteger
+    // const originalLength = deckOfCards.length;
+    while (deckOfCards.length > 0) {
+        randomNumber = Math.random();
+        randomNumberUpToX = deckOfCards.length * randomNumber;
+        randomInteger = Math.floor(randomNumberUpToX);
+        shuffledDeck.push(deckOfCards.splice(randomInteger, 1)[0]);
+    }
+    return shuffledDeck;
 }
 
-var resultados = [];
-for (let i = 0; i < 10; i++) {
-    resultados.push(randomPick(food))
-}
-console.log(resultados);
+console.log(shuffleDeck(deck));
+console.log(deck);
