@@ -18,9 +18,9 @@ n = str.indexOf(strToFind);
 console.log(n);
 
 // Solution 2.3
-// console.log(str);
-// console.log(str.split(strToFind));
-// console.log(str.split(strToFind).length);
-// console.log(str.split(strToFind).length -1);
+console.log(str);
+console.log(str.split(strToFind));
+console.log(str.split(strToFind).length);
+console.log(str.split(strToFind).length -1);
 n = str.split(strToFind).length - 1;
 console.log(n);

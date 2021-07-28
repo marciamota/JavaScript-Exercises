@@ -57,37 +57,37 @@
 // };
 
 // solution 2.1.3
-// var sumToFind = 7;
-// var numbers = [1,3,6,2];
-// var secondNumber;
-// var sumFound = false;
-// let i = 0;
-// while (i < numbers.length -1 && !sumFound) {
-//     secondNumber = sumToFind - numbers[i];
-//     if (numbers.indexOf(secondNumber) != -1) {
-//         console.log('sum found: ' + numbers[i] + ' + ' + secondNumber + ' = ' + sumToFind);
-//         sumFound = true;
+var sumToFind = 7;
+var numbers = [3,2,1,6];
+var secondNumber;
+var sumFound = false;
+let i = 0;
+while (i < numbers.length -1 && !sumFound) {
+    secondNumber = sumToFind - numbers[i];
+    if (numbers.indexOf(secondNumber) != -1) {
+        console.log('sum found: ' + numbers[i] + ' + ' + secondNumber + ' = ' + sumToFind);
+        sumFound = true;
+    }
+    i++
+}
+
+if (!sumFound){
+    console.log("sum not found");
+};
+
+// const sumToFind = 5;
+// const numbers = [1,3,6,2];
+// let numberToFind; 
+// let sumNotFound = true;
+// for (let i = 0; i < numbers.length; i++) {
+//     numberToFind = sumToFind - numbers[i];
+//     if (numbers.indexOf(numberToFind) != -1) {
+//         console.log('sum found: ' + numbers[i] + ' + ' + numberToFind + ' = ' + sumToFind);
+//         sumNotFound = false;
+//         break;
 //     }
-//     i++
 // }
 
-// if (!sumFound){
-//     console.log("sum not found");
-// };
-
-const sumToFind = 5;
-const numbers = [1,3,6,2];
-let numberToFind; 
-let sumNotFound = true;
-for (let i = 0; i < numbers.length; i++) {
-    numberToFind = sumToFind - numbers[i];
-    if (numbers.indexOf(numberToFind) != -1) {
-        console.log('sum found: ' + numbers[i] + ' + ' + numberToFind + ' = ' + sumToFind);
-        sumNotFound = false;
-        break;
-    }
-}
-
-if (sumNotFound) {
-    console.log('sum not found');
-}
+// if (sumNotFound) {
+//     console.log('sum not found');
+// }
