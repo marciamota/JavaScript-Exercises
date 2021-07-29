@@ -11,7 +11,7 @@
 // Write an efficient algorithm for the following assumptions:
 // N is an integer within the range [1..100,000];
 // each element of array A is an integer within the range [−1,000,000,000..1,000,000,000</span>]
-const A = [2, 3, -2, 5, -3];
+const A = [2, 7, -2, 5, -7];
 
 // inicializaqr a resposta com zero (assumir que no existe o numero que cumple as condicoes)
 // um por um pegar un numero do array (chamado numero atual)
@@ -21,26 +21,26 @@ const A = [2, 3, -2, 5, -3];
 // se todo o anterior se cumple entao atualizar resposta com o numero atual
 // quando tiver checado todos os numeros a funcao retorna a resposta
 
+// function solution(A) {
+//     var answer = 0; //inicializar a resposta com zero (assumir que no existe o numero que cumple as condicoes)
+//     var currentNumber;
+//     for (let i = 0; i < A.length; i++){ // um por um pegar un numero do array (chamado numero atual)
+//         currentNumber = A[i]; // A[i] takes the value that is in the position i of the array
+//         if (currentNumber > 0 && // ver se e maior que zero
+//             A.includes(-currentNumber) && // ver se inclui o negsativo
+//             currentNumber > answer) { // ver se e maior que a resposta anterior
+
+//             answer = currentNumber; // se todo o anterior se cumple entao atualizar resposta com o numero atual
+//         }
+//     }
+//     return answer; // quando tiver checado todos os numeros a funcao retorna a resposta
+// }
+
+// console.log(solution(A));
+
 function solution(A) {
     var answer = 0; //inicializar a resposta com zero (assumir que no existe o numero que cumple as condicoes)
-    var currentNumber;
-    for (let i = 0; i < A.length; i++){ // um por um pegar un numero do array (chamado numero atual)
-        currentNumber = A[i]; // A[i] takes the value that is in the position i of the array
-        if (currentNumber > 0 && // ver se e maior que zero
-            A.includes(-currentNumber) && // ver se inclui o negsativo
-            currentNumber > answer) { // ver se e maior que a resposta anterior
-
-            answer = currentNumber; // se todo o anterior se cumple entao atualizar resposta com o numero atual
-        }
-    }
-    return answer; // quando tiver checado todos os numeros a funcao retorna a resposta
-}
-
-console.log(solution(A));
-
-function solution(A) {
-    var answer = 0; //inicializar a resposta com zero (assumir que no existe o numero que cumple as condicoes)
-    for (currentNumber in A){ // um por um pegar un numero do array (chamado numero atual)
+    for (currentNumber of A){ // um por um pegar un numero do array (chamado numero atual)
         if (currentNumber > 0 && // ver se e maior que zero
             A.includes(-currentNumber) && // ver se inclui o negsativo
             currentNumber > answer) { // ver se e maior que a resposta anterior
