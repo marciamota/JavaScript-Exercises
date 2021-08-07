@@ -20,6 +20,47 @@ function subNumber (x, y){
 console.log(subNumber(2, 1));
 // Write a function that takes an integer minutes and converts it to seconds.
 
+// x number, y number, option string add, subtract, divide, multiply
+function calculator(x, y, option) {
+    if (option == 'add') {
+        return x + y;
+    } else if (option == 'subtract') {
+        return x - y;
+    } else if (option == 'divide') {
+        return x / y;
+    } else if (option == 'multiply') {
+        return x * y;
+    } else {
+        return 0;
+    }
+}
+calculator(1,2,'multiply')
+
+// x number, y number, option string add, subtract, divide, multiply
+function calculator2(x, y, option) {
+    let result;
+    switch(option) {
+        case 'soma':
+        case 'add':
+            result = x + y;
+            break;
+        case 'resta':
+        case 'subtract':
+            result = x - y;
+            break;
+        case 'divide':
+            result = x / y;
+            break;
+        case 'multiply':
+            result = x * y;
+            break;
+        default:
+            result = 0;
+    }
+    return result;
+}
+console.log('calculator2 ' +  calculator2(2, 1, 'resta'));
+
 function myTime(min) {
     return min * 60;
 }
@@ -72,3 +113,14 @@ function kilosToGrams(kilos){
     return kilos * 1000;
 }
 console.log(kilosToGrams(10));
+
+// Write a function that takes 4 values at the same time, years, days, minutes and seconds and calculate the total seconds.
+function convertToSeconds(years, days, hours, minutes, seconds) {
+    const secondsToSeconds = seconds;
+    const minutesToSeconds = minutes * 60;
+    const hoursToSeconds = hours * 60 * 60;
+    const daysToSeconds = days * 24 * 60 * 60;
+    const yearsToSeconds = years * 365 * 24 * 60 * 60; 
+    return yearsToSeconds + daysToSeconds + hoursToSeconds + minutesToSeconds + secondsToSeconds;
+}
+console.log('Marcia has lived ' + convertToSeconds(38, 305, 15, 28, 40) + ' seconds')
