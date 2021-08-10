@@ -123,4 +123,4 @@ function convertToSeconds(years, days, hours, minutes, seconds) {
     const yearsToSeconds = years * 365 * 24 * 60 * 60; 
     return yearsToSeconds + daysToSeconds + hoursToSeconds + minutesToSeconds + secondsToSeconds;
 }
-console.log('Marcia has lived ' + convertToSeconds(38, 305, 15, 28, 40) + ' seconds')
+console.log('Marcia has lived ' + convertToSeconds(38, 305, 15, 28, 40) + ' seconds');
