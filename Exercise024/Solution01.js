@@ -81,3 +81,5 @@ console.log(and(true));
 // 	return !resultA;
 // }
 // console.log(and2(true));
+
+// Using the "&&" Operator
