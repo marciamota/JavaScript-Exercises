@@ -123,15 +123,7 @@
 // calculator("49/7*2-3") ➞ 11
 
 // function calculator(expression) {
-// 	// let expArray = [];
-// 	// let before = '';
-// 	// const operators = "+-*/"
-// 	// for (i=0; i < expression.length; i++) {
-// 	// 	if (operators.includes(expression[i])) {
-// 	// 		expArray.push(expression[i])
-// 	// 	} 
-// 	// }
-// 	return eval(expression);
+// 		return eval(expression);
 // }
 // console.log(calculator("2*4+3-2-1"))
 
