@@ -129,11 +129,30 @@
 
 
 // Buggy Code (Part 4)
-function greeting(name) {
+// function greeting(name) {
 	
-	if (name == "Mubashir") {
-		return "Hello, my Love!";
-	}
-	return "Hello, " + name + "!";
-}
-console.log(greeting("Marcia"));
+// 	if (name == "Mubashir") {
+// 		return "Hello, my Love!";
+// 	}
+// 	return "Hello, " + name + "!";
+// }
+// console.log(greeting("Marcia"));
+
+// Create a function that takes two arguments. Both arguments are integers, a and b. 
+// Return true if one of them is 10 or if their sum is 10.
+
+// Examples
+// makesTen(9, 10) ➞ true
+
+// makesTen(9, 9) ➞ false
+
+// makesTen(1, 9) ➞ true
+
+// function makesTen(a, b){
+// 	return (a + b == 10) || (a == 10) || (b == 10);
+// }
+// console.log(makesTen(11, 2));
+
+// (c && d) || f || (h && (q && p))
+
+// Buggy Code (Part 2)
