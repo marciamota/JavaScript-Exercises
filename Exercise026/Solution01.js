@@ -156,3 +156,78 @@
 // (c && d) || f || (h && (q && p))
 
 // Buggy Code (Part 2)
+
+// #################################################################################################
+
+// Given two arguments, return an array which contains these two arguments.
+
+// Examples
+// makePair(1, 2) ➞ [1, 2]
+
+// makePair(51, 21) ➞ [51, 21]
+
+// makePair(512124, 215) ➞ [512124, 215]
+
+// function makePair(Arg1, Arg2){
+    // let myArray = [];
+    // myArray.push(Arg1);
+    // myArray.push(Arg2);
+    // myArray.push('test');
+    // return myArray;
+//     return [Arg1,Arg2];
+// }
+// console.log(makePair(12,24));
+
+// #############################################################################################
+
+// Create a function that takes two strings as arguments and return either true or false depending on 
+// whether the total number of characters in the first string is equal to the total number of characters 
+// in the second string.
+
+// Examples
+// comp("AB", "CD") ➞ true
+
+// comp("ABC", "DE") ➞ false
+
+// comp("hello", "edabit") ➞ false
+
+
+// function comp(arg1,arg2){
+//     return arg1.length == arg2.length;
+// }
+// console.log (comp("bird", "cat"));
+
+// ################################################################################################
+// Create a function that returns true if a string is empty and false otherwise.
+
+// Examples
+// A string containing only whitespaces " " does not count as empty.
+// isEmpty("") ➞ true
+
+// isEmpty(" ") ➞ false
+
+// isEmpty("a") ➞ false
+
+// function isEmpty(word){
+//     return word == ('');
+//     // return word.length == 0;
+// }
+// console.log(isEmpty('yyy'));
+
+// ##########################################################################################
+// Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+
+// Examples
+// divisibleByFive(5) ➞ true
+
+// divisibleByFive(-55) ➞ true
+
+// divisibleByFive(37) ➞ false
+
+// function divByFive(num1){
+//     console.log(num1 % 5);
+//     return (num1 % 5) === 0;
+// }
+// console.log(divByFive(18));
+
+// Check if an Integer is Divisible By Five
