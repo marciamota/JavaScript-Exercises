@@ -230,4 +230,90 @@
 // }
 // console.log(divByFive(18));
 
-// Check if an Integer is Divisible By Five
+//##############################################################################################
+// Create a function that takes an integer and return true if it's divisible by 100, otherwise return false.
+
+// Examples
+// divisible(1) ➞ false
+
+// divisible(1000) ➞ true
+
+// divisible(100) ➞ true
+
+// function divisible(int1){
+//     return (int1 % 100) == 0;
+// }
+// console.log(divisible(1000));
+
+// #################################################################################################
+// Write a function that returns the length of a string. Make your function recursive.
+
+// Examples
+// length("apple") ➞ 5
+
+// length("make") ➞ 4
+
+// length("a") ➞ 1
+
+// length("") ➞ 0
+
+// function longo (name){
+//     return name.length;
+// }
+// console.log(longo("friend"));
+
+// function longo2(str) {
+//     if (str == '') {
+//         return 0;
+//     } else {
+//         return 1 + longo2(str.slice(0, -1))
+//     }
+// }
+// console.log(longo2('ola'));
+
+// function factorial(num) {
+//     if (num == 1) {
+//         return num;
+//     } else {
+//         return num * factorial(num - 1);
+//     }
+// }
+// console.log(factorial(3));
+
+// ############################################################################################
+// Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
+
+// Examples
+// dividesEvenly(98, 7) ➞ true
+// // 98/7 = 14
+
+// dividesEvenly(85, 4) ➞ false
+// // 85/4 = 21.25
+
+// function dividesEvenly(arg1, arg2){
+//     return (arg1 % arg2) == 0;
+// }
+// console.log(dividesEvenly(21,4));
+
+// ######################################################################################################
+
+// Create a function that takes a string and returns it as an integer.
+
+// Examples
+// stringInt("6") ➞ 6
+
+// stringInt("1000") ➞ 1000
+
+// stringInt("12") ➞ 12
+
+// function stringInt(string1){
+//    return parseInt(string1);
+// }
+// console.log(stringInt("20"));
+
+// Return a String as an Integer
+
+
+
+
+
