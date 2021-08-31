@@ -55,6 +55,8 @@
 // function eq (str){ 
 //     return eval(str);
 // }
+var myEquation = "2+3"
+console.log(eq(myEquation));
 // console.log(eq("2*3"));
 
 // #############################################################################################
@@ -97,6 +99,7 @@
 // }
 
 // console.log(jsobject1.upvotes);
+// console.log(jsobject1['upvotes']);
 
 // var JSObject = {
 //     cachorro: {
@@ -139,12 +142,12 @@
 // }
 // console.log(futurePeople(1000, 2));
 
-// quanto dinheiro em 30 anos sem gastar. salvo ate agora x e vai salvar na variavel savings.
+// quanto dinheiro em 30 anos sem gastar. salvo ate agora em dinheirosalvo e ganha por mes em salario.
 
-// function money (salario, dinheirosalvo){
+// function money (dinheirosalvo, salario){
 //     const months = 360;
 //     return dinheirosalvo + (salario * months);
 // }
-// console.log(money(8000,200000));
+// console.log(money(20000,8000));
 
 // Century Crisis
