@@ -400,7 +400,166 @@
 // }
 // console.log(convert(1, 3));
 
-// Convert Hours and Minutes into Seconds
+//######################################################################
+// Equality Check
+// In this challenge, you must verify the equality of two different values given the parameters a and b.
+
+// Both the value and type of the parameters need to be equal. The possible types of the given parameters are:
+
+// Numbers
+// Strings
+// Booleans (false or true)
+// Special values: undefined, null and NaN
+// What have you learned so far that will permit you to do two different checks 
+// (value and type) with a single statement?
+
+// Implement a function that returns true if the parameters are equal, and false if they are not.
+
+// Examples
+// checkEquality(1, true) ➞ false
+// // A number and a boolean: the value and type are different.
+
+// checkEquality(0, "0") ➞ false
+// // A number and a string: the type is different.
+
+// checkEquality(1,  1) ➞ true
+// // A number and a number: the type and value are equal.
+
+// function checkEquality(para, parb){
+//     return para === parb;
+// }
+// console.log(checkEquality(2, true));
+
+// #######################################################################################
+// Profitable Gamble
+// Create a function that takes three arguments prob, prize, pay and returns true if prob * prize > pay; 
+// otherwise return false.
+
+// To illustrate:
+
+// profitableGamble(0.2, 50, 9)
+// ... should yield true, since the net profit is 1 (0.2 * 50 - 9), and 1 > 0.
+
+// Examples
+// profitableGamble(0.2, 50, 9) ➞ true
+
+// profitableGamble(0.9, 1, 2) ➞ false
+
+// profitableGamble(0.9, 3, 2) ➞ true
+
+// function profitableGamble(prob, prize, pay){
+//     return (prob * prize) > pay;
+// }
+// console.log(profitableGamble(0.9, 3, 2));
+
+// ####################################################################################
+// Boolean to String Conversion
+// Create a function that takes a boolean variable flag and returns it as a string.
+
+// Examples
+// boolToString(true) ➞ "true"
+
+// boolToString(false) ➞ "false"
+
+// function boolToString(boolA){
+//     return '"' + boolA.toString() + '"'; 
+// }
+// console.log(boolToString(false));
+
+// ###########################################################################################
+// Frames Per Second
+// Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
+
+// Examples
+// frames(1, 1) ➞ 60
+
+// frames(10, 1) ➞ 600
+
+// frames(10, 25) ➞ 15000
+
+// function frames(fps, minutes){
+//     return (minutes * 60 * fps) 
+// }
+// console.log(frames(10,10));
+
+// #########################################################################################
+
+// Using Arrow Functions
+// Create a function that returns the given argument, but by using an arrow function.
+
+// An arrow function is constructed like so:
+
+// arrowFunc=(/*parameters*/)=>//code here
+// Examples
+// arrowFunc(3) ➞ 3
+
+// arrowFunc("3") ➞ "3"
+
+// arrowFunc(true) ➞ true
+
+// function arrowFunc(parA){
+//     return parA;
+// }
+// arrowFunc=(parA)=>{
+//     return parA;
+// }
+// console.log(arrowFunc(true));
+
+// ####################################################################################
+// Miserable Parody of a Calculator
+// Create a function that will handle simple math expressions. 
+// The input is an expression in the form of a string.
+
+// Examples
+// calculator("23+4") ➞ 27
+
+// calculator("45-15") ➞ 30
+
+// calculator("13+2-5*2") ➞ 5
+
+// calculator("49/7*2-3") ➞ 11
+
+// function calculate (string){
+//     return eval(string)
+// }
+// console.log(calculate("23+4"));
+
+// ###########################################################
+// Buggy Code (Part 4)
+
+// function greeting(name) {
+//     if(name == "Mubashir") {
+//       return "Hello, my Love!";      
+//     }
+//     return "Hello, " + name + "!";
+//   }
+//   console.log(greeting("Maria"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
