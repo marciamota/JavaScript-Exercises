@@ -535,6 +535,251 @@
 //   }
 //   console.log(greeting("Maria"));
 
+// ####################################################################################
+// Two Makes Ten
+// Create a function that takes two arguments. Both arguments are integers, a and b. 
+// Return true if one of them is 10 or if their sum is 10.
+
+// Examples
+// makesTen(9, 10) ➞ true
+
+// makesTen(9, 9) ➞ false
+
+// makesTen(1, 9) ➞ true
+
+// function makes10(a, b){
+//     return (a && b) == 10 || (a + b) == 10;
+// }
+// console.log(makes10(9, 9));
+
+// ##################################################################################################
+// Let's Fuel Up!
+// A vehicle needs 10 times the amount of fuel than the distance it travels. 
+// However, it must always carry a minimum of 100 fuel before setting off.
+
+// Create a function which calculates the amount of fuel it needs, given the distance.
+
+// Examples
+// calculateFuel(15) ➞ 150
+
+// calculateFuel(23.5) ➞ 235
+
+// calculateFuel(3) ➞ 100
+
+// function calculateFuel(fueldistance){
+//     let neededFuel = fueldistance *10;
+//     if (neededFuel >100){
+//         return neededFuel;
+//     }
+//     else {
+//         return 100;
+//     }
+// }        
+// console.log(calculateFuel(3));
+
+// #############################################################################################
+// Pair Management
+// Given two arguments, return an array which contains these two arguments.
+
+// Examples
+// makePair(1, 2) ➞ [1, 2]
+
+// makePair(51, 21) ➞ [51, 21]
+
+// makePair(512124, 215) ➞ [512124, 215]
+
+// function makePair(a, b){
+//     let myArray = [];
+//     myArray.push(a);
+//     myArray.push(b);
+//     return myArray;
+//     return [a,b];
+// }
+// console.log(makePair(51, 21));
+
+// ######################################################################################
+// Compare Strings by Count of Characters
+// Create a function that takes two strings as arguments and return either true or false depending on whether 
+// the total number of characters in the first string is equal to the total number of characters 
+// in the second string.
+
+// Examples
+// comp("AB", "CD") ➞ true
+
+// comp("ABC", "DE") ➞ false
+
+// comp("hello", "edabit") ➞ false
+
+// function comp(first, second){
+//     return first.length == second.length;
+// }
+// console.log(comp("AB", "GHCD"));
+
+// ###############################################################################
+// Is the String Empty?
+// Create a function that returns true if a string is empty and false otherwise.
+
+// Examples
+// isEmpty("") ➞ true
+
+// isEmpty(" ") ➞ false
+
+// isEmpty("a") ➞ false
+
+// function isEmpty(x){
+//     return x == [""];
+// }
+// console.log(isEmpty(" "));
+
+// ##########################################################################
+// Check if an Integer is Divisible By Five
+// Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+
+// Examples
+// divisibleByFive(5) ➞ true
+
+// divisibleByFive(-55) ➞ true
+
+// divisibleByFive(37) ➞ false
+
+// function divisibleByFive(num1){
+//     return (num1 % 5) === 0;
+// }
+// console.log(divisibleByFive(12));
+
+// #################################################################################
+// Multiple of 100
+// Create a function that takes an integer and return true if it's divisible by 100, otherwise return false.
+
+// Examples
+// divisible(1) ➞ false
+
+// divisible(1000) ➞ true
+
+// divisible(100) ➞ true
+
+// function divisible(num1){
+//     return num1 % 100 === 0;
+// }
+// console.log(divisible(100));
+
+// ########################################################################################
+// Recursion: Length of a String
+// Write a function that returns the length of a string. Make your function recursive.
+
+// Examples
+// length("apple") ➞ 5
+
+// length("make") ➞ 4
+
+// length("a") ➞ 1
+
+// length("") ➞ 0
+
+// function length(comprimento){
+//     return comprimento.length;
+// }
+// console.log(length("a"));
+
+//  Let's Fuel Up!
+// Pair Management
+// 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
