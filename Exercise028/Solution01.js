@@ -568,10 +568,9 @@
 
 // function calculateFuel(fueldistance){
 //     let neededFuel = fueldistance *10;
-//     if (neededFuel >100){
+//     if (neededFuel > 100) {
 //         return neededFuel;
-//     }
-//     else {
+//     } else {
 //         return 100;
 //     }
 // }        
@@ -680,10 +679,329 @@
 //     return comprimento.length;
 // }
 // console.log(length("a"));
+// ###########################################################################################
+// Let's Fuel Up!
+// A vehicle needs 10 times the amount of fuel than the distance it travels. However, 
+// it must always carry a minimum of 100 fuel before setting off.
 
-//  Let's Fuel Up!
+// Create a function which calculates the amount of fuel it needs, given the distance.
+
+// Examples
+// calculateFuel(15) ➞ 150
+
+// calculateFuel(23.5) ➞ 235
+
+// calculateFuel(3) ➞ 100
+
+// function calculateFuel(distance){
+//     if (distance * 10 < 100){
+//         return 100;
+//     } // > 100
+//     return distance * 10;
+// }
+
+// function calculateFuel(distance){
+//     return Math.max(100, distance * 10);
+// }
+// console.log(calculateFuel(10000));
+
+// function calculateFuel(fueldistance){
+//     let neededFuel = fueldistance * 10;
+//     if (neededFuel > 100) {
+//         return neededFuel;
+//     } else { // <100
+//         return 100;
+//     }
+// } 
+// #################################################################################################
 // Pair Management
-// 
+// Given two arguments, return an array which contains these two arguments.
+
+// Examples
+// makePair(1, 2) ➞ [1, 2]
+
+// makePair(51, 21) ➞ [51, 21]
+
+// makePair(512124, 215) ➞ [512124, 215]
+
+// function makePair(argA, argB){
+//     return [argA, argB];
+// }
+// console.log(makePair("free", true));
+
+// ##################################################################################################
+// Divides Evenly
+// Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
+
+// Examples
+// dividesEvenly(98, 7) ➞ true
+// // 98/7 = 14
+
+// dividesEvenly(85, 4) ➞ false
+// // 85/4 = 21.25
+
+// function dividesEvenly(a , b){
+//     return a % b == 0;
+// }
+// console.log(dividesEvenly(20, 4));
+
+// ######################################################################################
+// Return a String as an Integer
+// Create a function that takes a string and returns it as an integer.
+
+// Examples
+// stringInt("6") ➞ 6
+
+// stringInt("1000") ➞ 1000
+
+// stringInt("12") ➞ 12
+
+// function stringInt(arg){
+//     return parseInt(arg);
+// }
+// console.log(stringInt("6"));
+
+// ##########################################################################################
+// Area of a Rectangle
+// Create a function that calculates the area of a rectangle. If the arguments are invalid, your 
+// function must return -1.
+
+// Examples
+// area(3, 4) ➞ 12
+
+// area(10, 11) ➞ 110
+
+// area(-1, 5) ➞ -1
+
+// area(0, 2) ➞ -1
+
+// function area(base, height){
+//     if (base > 0 && height > 0) { 
+//         return base * height;
+//     } else {
+//         return -1;
+//     }
+// }
+// console.log(area(-1, 5));
+
+// ################################################################################
+
+// Concatenate First and Last Name into One String
+// Given two strings, firstName and lastName, return a single string in the format "last, first".
+
+// Examples
+// concatName("First", "Last") ➞ "Last, First"
+
+// concatName("John", "Doe") ➞ "Doe, John"
+
+// concatName("Mary", "Jane") ➞ "Jane, Mary"
+
+
+// function concatName(first, last){
+//     // let str = last + ", " + first;
+//     // return str;
+//     return last + ", " + first;
+// }
+// console.log(concatName("oliver", "garcia"));
+
+// #############################################################################
+
+// Evaluate an Equation
+// Create a function that evaluates an equation.
+
+// Examples
+// eq("1+2") ➞ 3
+
+// eq("6/(9-7)") ➞ 3
+
+// eq("3+2-4") ➞ 1
+
+// function eq(arg){
+//     return eval(arg);
+// }
+// console.log(eq('3+2-4'));
+
+// ################################################################
+
+// Solve the Equation
+// Create a function that takes an equation (e.g. "1+1"), and returns the answer.
+
+// Examples
+// equation("1+1") ➞ 2
+
+// equation("7*4-2") ➞ 26
+
+// equation("1+1+1+1+1") ➞ 5
+
+// function equation(calculate){
+//     return eval(calculate); 
+// }
+// console.log(equation("7* 4-2"));
+
+// ######################################################################################
+
+// Upvotes vs Downvotes
+// Given an object containing counts of both upvotes and downvotes, return what vote count should be displayed. 
+// This is calculated by subtracting the number of downvotes from upvotes.
+
+// Examples
+// getVoteCount({ upvotes: 13, downvotes: 0 }) ➞ 13
+
+// getVoteCount({ upvotes: 2, downvotes: 33 }) ➞ -31
+
+// getVoteCount({ upvotes: 132, downvotes: 132 }) ➞ 0
+
+// function getVoteCount(votes){
+//     return votes.upvotes - votes["downvotes"];
+// }
+// console.log(getVoteCount({ upvotes: 2, downvotes: 33 }));
+
+// ######################################################################################
+
+// Century Crisis
+// You must calculate the number of people there will be in three decades from now.
+
+// The variable population is the world population now.
+// Assume that every month, someone gives birth to more people n.
+// Return the number of people there will be when the spaceship is complete.
+
+// Examples
+// futurePeople(256, 2) ➞ 976
+
+// futurePeople(3248, 6) ➞ 5408
+
+// futurePeople(5240, 3) ➞ 6320
+
+// function futureMoney(currentSave, monthlySafe){
+//     return currentSave + monthlySafe * 12 * 30;
+// }
+// console.log(futureMoney(400000, 5000));
+
+// ####################################################################################
+
+// Return Negative
+// Create a function that takes a number as an argument and returns negative of that number. 
+// Return negative numbers without any change.
+
+// Examples
+// returnNegative(4) ➞ -4
+
+// returnNegative(15) ➞ -15
+
+// returnNegative(-4) ➞ -4
+
+// returnNegative(0) ➞ 0
+
+// function returnNegative(num){
+//     return -num;
+// }
+// console.log(returnNegative(4));
+
+// #####################################################################
+
+// Reverse an Array
+// Write a function to reverse an array.
+
+// Examples
+// reverse([1, 2, 3, 4]) ➞ [4, 3, 2, 1]
+
+// reverse([9, 9, 2, 3, 4]) ➞ [4, 3, 2, 9, 9]
+
+// reverse([]) ➞ []
+
+// function myReverse(myArray){
+//     return myArray.reverse();
+// }
+// console.log(myReverse([5,6,7,8]));
+
+// ####################################################################
+
+// Movie Theatre Admittance
+// Write a function that checks whether a person can watch an MA15+ rated movie. 
+// One of the following two conditions is required for admittance:
+
+// The person is at least 15 years old.
+// They have parental supervision.
+// The function accepts two parameters, age and isSupervised. Return a boolean.
+
+// Examples
+// acceptIntoMovie(14, true) ➞ true
+
+// acceptIntoMovie(14, false) ➞ false
+
+// acceptIntoMovie(16, false) ➞ true
+
+// function acceptIntoMovies(age, isSupervised){
+//     return age > 15 || isSupervised;
+// }
+// console.log(acceptIntoMovies(14, false));
+
+// ###########################################################################
+
+// function incrementItems(arr) {
+// 	for (let i = 0; i < arr.length; i++){
+//         arr[i] = arr[i] + 1
+//     }
+//     return arr;
+//     	}
+// console.log(incrementItems([0,2]));
+
+// #############################################################################
+// Moving House
+// I'd like to calculate how long on average I've lived in a single house.
+
+// Given a person's age and the number of times they've moved house as moves, 
+// return the average number of years that they've spent living in the same house.
+
+// Examples
+// yearsInOneHouse(30, 1) ➞ 15
+
+// yearsInOneHouse(15, 2) ➞ 5
+
+// yearsInOneHouse(80, 0) ➞ 80
+
+// function yearsInOnHouse(age, mudancas){
+//     return Math.round(age / (mudancas + 1));
+//     }
+// console.log(yearsInOnHouse(80,2));
+
+// ################################################################################
+
+// Drinks Allowed?
+// A bartender is writing a simple program to determine whether he should serve drinks to someone. 
+// He only serves drinks to people 18 and older and when he's not on break.
+
+// Given the person's age, and whether break time is in session, create a function which returns 
+// whether he should serve drinks.
+
+// Examples
+// shouldServeDrinks(17, true) ➞ false
+
+// shouldServeDrinks(19, false) ➞ true
+
+// shouldServeDrinks(30, true) ➞ false
+
+// function shouldServeDrinks(age, breakTime){
+//     return age > 18 && !breakTime;
+// }
+// console.log(shouldServeDrinks(19, false));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
