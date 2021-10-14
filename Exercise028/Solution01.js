@@ -1007,11 +1007,67 @@
 // ############################################################################################
 
 // Arrow Functions
+// add2 = (x) => x + 2; 
+// console.log(add2);
+// // ############################################################################################
+// Using Ternary Operators
+// It is written in the format:
+// condition ? result_if_true : result_if_false
+// Ternary operators are often more compact than multi-line if statements, and are useful for simple conditional tests.
+// For example:
+// is_nice = true
+// // Using ternary operator.
+// state = is_nice ? "nice" : "not nice"
+// // Equivalent code using multi-line if statements.
+// if (is_nice)
+//   state = "nice"
+// else
+//   state = "not nice"
+// Write a function that uses the ternary operator to return "yeah" if bool is true, and "nope" otherwise.
 
+// Examples
+// yeah_nope(true) ➞ "yeah"
 
+// yeah_nope(false) ➞ "nope"
 
+// function yeah_nope(istrue){
+//     return istrue? "yeah" : "nope";
+// }
+// console.log(yeah_nope(false));
 
+// #############################################################################################
 
+// Minimal IV: if-else if-else Inferno
+// code tab
+// function equilbrium (x) {
+// 	if (x > 0) return "positive"
+// 	else if (x < 0) return "negative"
+// 	}
+// return true;
+
+// ##############################################################################################
+// Is the String Odd or Even?
+// Given a string, return true if its length is even or false if the length is odd.
+
+// Examples
+// oddOrEven("apples") ➞ true
+// // The word "apples" has 6 characters.
+// // 6 is an even number, so the program outputs true.
+
+// oddOrEven("pears") ➞ false
+// // "pears" has 5 letters, and 5 is odd.
+// // Therefore the program outputs false.
+
+// oddOrEven("cherry") ➞ true
+
+// function oddOrEven(x) {
+//     return (x.length % 2 == 0);
+// }
+// console.log(oddOrEven("cherrys"));
+
+// #####################################################################################
+
+ES6: Destructuring Arrays I
 
 
 
